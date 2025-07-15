@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 3.9%; /* Near black */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 174 70% 40%; /* Vibrant teal */
+    --primary-foreground: 0 0% 98%; /* White */
+
+    --secondary: 210 40% 96.1%; /* Light gray */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark blue-gray */
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 174 70% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%; /* Near black */
+    --foreground: 0 0% 98%; /* White */
+
+    --card: 0 0% 7.9%; /* Darker gray for cards */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 174 70% 40%; /* Vibrant teal */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 14.9%; /* Dark gray */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%; /* Light gray */
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%; /* Dark gray */
+    --input: 0 0% 14.9%;
+    --ring: 174 70% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
